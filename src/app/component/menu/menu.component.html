@@ -1,0 +1,65 @@
+<div class="header">
+    <img src="assets/Logo.jpeg" alt="Left Image" class="side-image left-image">
+    <div class="navbar-container">
+      <nav>
+        <ul class="navbar">
+          <li>
+            <a href="/">Inicio</a>
+          </li>
+          <li>
+            <a href="/menu">Agregar</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">Songs</h1>
+    </div>
+    <img src="assets/Ruido.jpeg" alt="Right Image" class="side-image right-image">
+  </div>
+  
+  <div class="song-menu">
+    <h2>Menú de Canciones</h2>
+  
+    <div class="form-container compact">
+      <form [formGroup]="songForm" (ngSubmit)="onSubmit()">
+        <div class="input-group">
+          <label for="nombre_album">Nombre del Álbum</label>
+          <input id="nombre_album" formControlName="nombre_album" placeholder="Nombre del álbum" />
+        </div>
+  
+        <div class="input-group">
+          <label for="contenido">Contenido</label>
+          <input id="contenido" formControlName="contenido" placeholder="Contenido" />
+        </div>
+  
+        <div class="input-group">
+          <label for="anio_lanzamiento">Año de Lanzamiento</label>
+          <input id="anio_lanzamiento" type="number" formControlName="anio_lanzamiento" placeholder="Año de lanzamiento" />
+        </div>
+  
+        <div class="input-group">
+          <label for="artista">Artista</label>
+          <input id="artista" formControlName="artista" placeholder="Artista" />
+        </div>
+  
+        <div class="input-group">
+          <label for="duracion">Duración</label>
+          <input id="duracion" formControlName="duracion" placeholder="Duración" />
+        </div>
+  
+        <button type="submit" [disabled]="songForm.invalid">{{ editMode ? 'Actualizar Canción' : 'Agregar Canción' }}</button>
+      </form>
+    </div>
+  
+    <!-- Lista de canciones -->
+    <div class="song-list">
+      <h3>Lista de Canciones</h3>
+      <ul>
+        <li *ngFor="let song of songs">
+          {{ song.nombre_album }} - {{ song.artista }} ({{ song.anio_lanzamiento }})
+          <button (click)="editSong(song)">Editar</button>
+          <button (click)="deleteSong(song.id)">Eliminar</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  

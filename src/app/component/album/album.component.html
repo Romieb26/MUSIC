@@ -1,0 +1,10 @@
+<div class="album-container">
+    <div class="card" *ngFor="let album of albums">
+      <h2>{{ album.nombre_album }}</h2>
+      <p><strong>Contenido:</strong> {{ album.contenido }}</p>
+      <p><strong>Año de lanzamiento:</strong> {{ album.anio_lanzamiento }}</p>
+      <p><strong>Artista:</strong> {{ album.artista }}</p>
+      <p><strong>Duración:</strong> {{ album.duracion }} mins</p>
+    </div>
+  </div>
+  

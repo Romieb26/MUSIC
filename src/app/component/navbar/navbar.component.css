@@ -1,0 +1,51 @@
+.header {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #DBB5EE;
+  padding: 20px; 
+  position: relative; 
+}
+
+.navbar-container {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  flex-grow: 1; 
+}
+
+.navbar {
+  display: flex; 
+  list-style-type: none;
+  margin-right: 20px; 
+}
+
+.navbar li {
+  margin-right: 20px; 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold; 
+}
+
+.side-image {
+  height: 50px; 
+}
+
+.left-image {
+  position: absolute; 
+  left: 10px; 
+}
+
+.right-image {
+  position: absolute; 
+  right: 10px; 
+}
+
+.title {
+  margin: 0 20px; 
+  color: black; 
+  text-align: center; 
+}
