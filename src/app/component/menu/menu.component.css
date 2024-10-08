@@ -86,7 +86,7 @@ button:hover {
 }
 
 .side-image {
-  height: 50px;
+  height: 120px;
 }
 
 .left-image {
@@ -97,6 +97,7 @@ button:hover {
 .right-image {
   position: absolute;
   right: 10px;
+  height: 200px
 }
 
 .title {

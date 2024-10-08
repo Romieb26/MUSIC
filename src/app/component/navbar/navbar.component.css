@@ -31,7 +31,7 @@
 }
 
 .side-image {
-  height: 50px; 
+  height: 130px; 
 }
 
 .left-image {
@@ -42,6 +42,7 @@
 .right-image {
   position: absolute; 
   right: 10px; 
+  height: 200px; 
 }
 
 .title {

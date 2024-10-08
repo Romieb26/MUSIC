@@ -1,0 +1,45 @@
+.song-card-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dfa4fd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .no-songs-message {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+  }
+  
+  .song-card {
+    background-color: #edccff; /* Color de fondo para cada tarjeta */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.2s;
+    color: #ffffff; /* Cambia el color del texto a blanco para todo dentro de la tarjeta */
+  }
+  
+  .song-card:hover {
+    transform: scale(1.02); /* Efecto de hover */
+  }
+  
+  .song-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .song-artist,
+  .song-album,
+  .song-year {
+    margin: 5px 0;
+  }

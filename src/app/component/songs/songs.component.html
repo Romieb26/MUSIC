@@ -1,0 +1,13 @@
+<div class="song-card-container">
+    <h2 class="title">Lista de Canciones</h2>
+    <div *ngIf="songs.length === 0" class="no-songs-message">
+      <p>No hay canciones disponibles.</p>
+    </div>
+    <div *ngFor="let song of songs" class="song-card">
+      <h3 class="song-title">{{ song.nombre_album }}</h3>
+      <p class="song-artist">{{ song.artista }}</p>
+      <p class="song-album">{{ song.contenido }}</p>
+      <p class="song-year">{{ song.anio_lanzamiento }}</p>
+      
+    </div>
+  </div>
